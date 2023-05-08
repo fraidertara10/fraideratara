@@ -278,7 +278,7 @@ footer {
         align-items: center;
         clip-path: circle(0.0% at 0 0);
        }
-       .nav .enlaces-header{
+       .nav .enlaces-header a{
         color: #fff;
         background-color: #da0d0d;
         text-transform: uppercase;
