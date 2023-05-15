@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cambia_fondo{
+            background-color: aliceblue;
+            padding: 10px;
+            border-radius: 5px;
+            border: 20px solid #000;
+            text-transform: uppercase;
+
+        }
+        #cambiar_fondo:hover{
+            background-color: aqua;
+            transition: all ease-in 0.6s;
+            box-shadow: 0 0 10px gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>FRAIDER</h1>
+    <input type="text" id="variable ">
+    <button onclick="funcion()" id="evento">calcular</button>
+    <h1 id="titulo"></h1>
+    <span id="cambia_fondo">fondo</span>
+    <!--archivos javascript-->
+    <script>
+        // variables
+        const nameone ="cualquier cosa, num, obj, array"; 
+        var name_dos ="cualquier cosa, num, obj, array"; 
+        let nametres ="cualquier cosa, num, obj, array"; 
+        alert(name);
+        console.log(name_dos);
+        console.log(nametres);
+    //    tipos de datos
+    let num_a =5; //numero entero
+    let num_b=10.2; //numero decimal
+    let boolean=false; //o true
+    let strinvar="hola soy un srtin";
+    let arraynum= [1,2,3,4,5,"6","7"];
+    let dias_semana=["lunes","martes","miercoles", "jueves","viernes","sabado","domingo"];
+    let users=[
+        {name:"fraider", last_name:"tarazona", age:31},
+        {name:"antonio", last_name:"morales", age:32},
+        {name:"marlene", last_name:"pabon", age:33}
+
+    ]
+    // operaciones matematicas: + - * / {} %  ^ 
+    let suma = num_a + num_b;
+    let resta = num_b - num_a;
+    let multi = num_a * num_b;
+    let divi = num_a / num_b;
+    let module = num_a % num_b;
+    let expo = num_a  ^num_b;
+    resta = Math.round(resta);
+    console.log ("suma" + suma + "\nresta" + resta + "\nmultiplicacion" + multi ) ;
+    let concatenar = "suma: ".concat(suma);
+    console.log(concatenar);
+    //OPERADORES DE COMPARACION: < / > / <> / >= / <= / = / == / ===
+    // OPERADORES LOGICOS: Ternario / and && / or   / negacion,diferente o contrario !
+    let varboo = true;
+    console.log(!varboo);  
+    //ESTRUCTURA REPETITIVAS: IF / ELSE /  ELSEIF 
+    // ESTRUCTURAS CICLICAS : FOR / WHILE / DO WHILE 
+    let long = arraynum.length
+    if(long > 7){
+        cosole.log(arraynum);
+        cosole.log(arraynum.length);
+        console.long(users[0].name)
+    }
+    else {
+        console.log("no ingresa")
+    }
+    for(let i=0; i<dias_semana.length; i++){
+        console.log(dias_semana[i]);
+    }
+    let varname =0;
+    while(varname<users.length){
+        console.log(users[varname].name);
+        varname++;
+    }
+    //FUNCIONES Y EVENTOS
+    function fucion(){
+        console.log("escucha");
+        let variable = document.getElementById('variable').value;
+        variable = variable.toUppercase;
+        document.getElementById("titulo").innerText = variable;
+        document.getElementById("titulo").style.color="#00ffff";
+        console.log(variable);
+    }
+    ducument.getElementById("evento").addEventListener("click", function(){
+        let variable = document.getElementById('variable').value;
+        console.log(variable).style.background="red";
+        console.log(variable);
+
+    })
+    document.getElementById("cambiar_fondo").addEventListener("dbclick", function(){
+    document.getElemntById("body").style.background="red";
+    })
+    </script>
+
+</body>
+</html>

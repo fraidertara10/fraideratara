@@ -58,8 +58,8 @@ nav {
 
 .nav .enlaces-header a:hover {
     color: #fff;
-    background-color: #eaa9c0;
-    border-color: #ac5151;
+    background-color: #e40d0d;
+    border-color: #f00d0d;
     transition: all ease-in-out .5s;
 }
 .hamburguer{
@@ -119,7 +119,7 @@ nav {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: #e0a2a2;
+    background-color: #fc0000;
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -154,9 +154,9 @@ nav {
     padding: 25px;
 }
 .education i {
-    border: 2px solid #e0a2a2;
+    border: 2px solid #dd0b0b;
     border-radius: 50%;
-    background-color: #e0a2a2;
+    background-color: #cf0101;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -170,7 +170,7 @@ nav {
     text-decoration: none;
 }
 .education:hover{
-    background-color: #e0a2a2;
+    background-color: #6e4b4b;
     box-shadow: 0 0 8px gray;
     transition: all ease-in-out .4s;
     color:#fff;
@@ -181,7 +181,7 @@ nav {
 
 /* ########################## FOOTER ############################*/
 footer {
-    background: rgb(70, 70, 70);
+    background: rgb(56, 50, 50);
     padding: 20px o; /*50 0 20 0*/
     padding-top: 30px;
     overflow: hidden;
@@ -205,7 +205,7 @@ footer {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
-    background-color: #e0a2a2;
+    background-color: #fc1212;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
@@ -259,7 +259,7 @@ footer {
 }
 
 .social-media > a > i:hover {
-    background-color: #e0a2a2;
+    background-color: #eb0a0a;
 }
 /* ########################## MEDIA QUERY ############################*/
 @media screen and (max-width:700px){
@@ -268,7 +268,7 @@ footer {
     }
        .enlaces-header{
         position: fixed;
-        background-color: #ac5151;
+        background-color: #e60a0a;
         top: 0;
         right: 0;
         width: 100%;
@@ -280,7 +280,7 @@ footer {
        }
        .nav .enlaces-header a{
         color: #fff;
-        background-color: #da0d0d;
+        background-color: #ff0000;
         text-transform: uppercase;
         font-weight: 800px;
         margin-top: 20px;
@@ -288,7 +288,7 @@ footer {
         text-align: center;
        }
        .nav .enlaces-header:hover a{
-        color: #ac5151;
+        color: #d10000;
         background-color: #fff;
          
        }
