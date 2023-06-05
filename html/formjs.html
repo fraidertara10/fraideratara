@@ -39,15 +39,15 @@
            let vericar = false;
            let info="";
            if(name.length<3){
-            info +="el nombre debe ser mayor a 2 <br>";
+            info +="el nombre debe ser mayor a 2<br>";
             verificar=true;
            }
-           if(val_email.test(email.value)){
+           if(!val_email.test(email.value)){
             info += "email invalido <br>"
             vericar=true;
            }
            if(password.value.length< 8){
-            info +="password corto y debil <br>";
+            info +="password corto y debil<br>";
             verificar=true;
            }
            if(verificar){
